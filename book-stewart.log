@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.1.24)  24 JAN 2017 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.1.24)  24 JAN 2017 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -208,7 +208,23 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no £ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no £ in font cmr10!
- [2]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no © in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+ [2] [3]
 (./book-stewart.aux) ) 
 Here is how much of TeX's memory you used:
  345 strings out of 494930
@@ -217,6 +233,6 @@ Here is how much of TeX's memory you used:
  3697 multiletter control sequences out of 15000+600000
  10508 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 19i,7n,22p,282b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,7n,22p,336b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book-stewart.dvi (2 pages, 5252 bytes).
+Output written on book-stewart.dvi (3 pages, 6784 bytes).
