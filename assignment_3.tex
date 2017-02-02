@@ -10,6 +10,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{pgfplots}
 
 
 
@@ -73,62 +74,143 @@
 \end{split}					
 \end{align}
 
-Antes de qualquer O livro começa com uma sẽrie de exercicios considerados que eu considero "pré-calculo", abaixo segue as minhas soluções:
+Antes de qualquer O livro começa com uma série de exercicios considerados que eu considero "pré-calculo", abaixo segue as minhas soluções:
+
+
+\section{Capitulo 0 - Para que serve calculo?}
+Na grecia antiga, os matematicos já sabiam como calcular a area de qualquer figura geometrica dividindo ela em triangulos, dessa forma eles já conseguiam calcular a área da maioria das figuras, exceto a da circunferencia, porém é possivel notar que é possivel colocar uma regular circunscrita na circunferencia afim de estimar sua área, e quanto mais lados tiver essa figura mais proximo a area da circunferencia podemos chegar. Uma figura geometrica regular com lados infinitos circunscrita na circunferencia tem a mesma area que ela, a pergunta ficou "Como podemos calcular a área de uma figura com infinitos lados?". 
+
+Um problema bem parecido aconteceu quando os matematicos tentavam calcular a área que determinada função fazia sobre o grafico,
+a maneira mais adequada de fazer isso, seria encontrar a tendencia de variação entre os coeficientes angulares que os pontos possuiam e ao calcular essa diferença de infinitos pontos eles poderiam encontrar 
+
+Esse é um dos focos do calculo, para estimar uma grandeza nos somamos uma infinidade de numeros pertecentes a uma sequencia e obtemos um numero muito proximo da que seria o ideal.
+
+Um dos exemplos apresentados no primeiro capitulo é a soma de 
+
+\begin{equation}
+\left(\frac{1}{3}\right) = \left(\frac{3}{10}\right) + \left(\frac{3}{100}\right) + \left(\frac{3}{1000}\right) + \cdot\cdot\cdot
+\end{equation}
+
+Podemos assumir que ao somamos infinitas frações nos chegaremos à $\frac{1}{3}$ esse tipo de processo é chamado de limite, e é escrito como: 
+
+\begin{equation}
+\lim_{x \to \infty} \frac{3}{10^n} = \frac{1}{3}
+\end{equation}
+
+O calculo é usado em todos os tipos de ciencia para explicar fenomenos e comportamentos, assim os estimando e os entendendo.
+
+\section{Capitulo I - Funções e modelos}
+
+Uma função pode ser representada de diversas maneiras - um gráfico, equação, tabela ou até mesmo por meio de palavas.
+Uma função $ f $ é uma lei que associa cada elemento de um conjunto $ D $ a exatamente um unico outro elemento de um conjunto$ E $.
+Conjunto $ E $ é chamado de dominio da função, é o conjunto de todos os valores que podem assumir $ f(x) $ quando variamos a variavel X por todo o dominio.
+
+É possivel considerar a função como uma maquina tal que:
+
+\begin{equation}
+x (entrada) \rightarrow F (processamento) \rightarrow f(x) (saída)
+\end{equation}
+
+Funções com finitos elementos também podem ser representadas com um diagrama de flexas.
+
+O metodo mais comum de se representar uma fnução é a partir de uma equação que define define seu grafico, essas equações seguem a o formato:
+
+\begin{equation}
+{(x, f(x)) | x \in D}
+\end{equation}
+
+\clearpage
+
+O livro dá alguns exemplos de funções e pede para que esbolsemos o gráfico que as reprenseta, como tenho um computador a disposição vou desenha-las para mais fácil entendimento. Segue os gráficos abaixo:
+
+\begin{tikzpicture}
+ \begin{axis}[    
+   axis lines = middle, 
+   axis line style={->},  
+   xlabel=$x$,
+   ylabel={$f(x) = 2x - 1$}
+ ] 
+   \addplot [black, domain=-5:5]{2*x - 1}; 
+ \end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}[trim axis left]
+ \begin{axis}[    
+   axis lines = middle, 
+   axis line style={->},  
+   xlabel=$x$,
+   ylabel={$f(x) = x^2$}
+ ] 
+   \addplot [black, domain=-5:5]{x^2}; 
+ \end{axis}
+\end{tikzpicture}
+
+Um dos exercicios ele pede para encontrarmos o dominio da função $g(x) = \frac{1}{x^2}$, para fazer isso precisamos garantir que o divisor nunca seja nulo, dessa forma $x^2 -x \ne 0$, desenvolvemos a equação de modo que: 
+
+\begin{equation}
+x2-x \ne 0
+\end{equation}
+
+
+
+
+
+
 
 %------------------------------------------------
 
-\subsection{Heading on level 2 (subsection)}
+%\subsection{Heading on level 2 (subsection)}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-\begin{align}
-A = 
-\begin{bmatrix}
-A_{11} & A_{21} \\
-A_{21} & A_{22}
-\end{bmatrix}
-\end{align}
-Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+%Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+%\begin{align}
+%A = 
+%\begin{bmatrix}
+%A_{11} & A_{21} \\
+%A_{21} & A_{22}
+%\end{bmatrix}
+%\end{align}
+%Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 %------------------------------------------------
 
-\subsubsection{Heading on level 3 (subsubsection)}
+%\subsubsection{Heading on level 3 (subsubsection)}
 
-\lipsum[3] % Dummy text
+%\lipsum[3] % Dummy text
 
-\paragraph{Heading on level 4 (paragraph)}
+%\paragraph{Heading on level 4 (paragraph)}
 
-\lipsum[6] % Dummy text
+%\lipsum[6] % Dummy text
 
 %----------------------------------------------------------------------------------------
 %	PROBLEM 2
 %----------------------------------------------------------------------------------------
 
-\section{Lists}
+%\section{Lists}
 
 %------------------------------------------------
 
-\subsection{Example of list (3*itemize)}
-\begin{itemize}
-	\item First item in a list 
-		\begin{itemize}
-		\item First item in a list 
-			\begin{itemize}
-			\item First item in a list 
-			\item Second item in a list 
-			\end{itemize}
-		\item Second item in a list 
-		\end{itemize}
-	\item Second item in a list 
-\end{itemize}
+%\subsection{Example of list (3*itemize)}
+%\begin{itemize}
+%	\item First item in a list 
+%		\begin{itemize}
+%		\item First item in a list 
+%			\begin{itemize}
+%			\item First item in a list 
+%			\item Second item in a list 
+%			\end{itemize}
+%		\item Second item in a list 
+%		\end{itemize}
+%	\item Second item in a list 
+%\end{itemize}
 
 %------------------------------------------------
 
-\subsection{Example of list (enumerate)}
-\begin{enumerate}
-\item First item in a list 
-\item Second item in a list 
-\item Third item in a list
-\end{enumerate}
+%\subsection{Example of list (enumerate)}
+%\begin{enumerate}
+%\item First item in a list 
+%\item Second item in a list 
+%\item Third item in a list
+%\end{enumerate}
 
 %----------------------------------------------------------------------------------------
 
